@@ -148,11 +148,11 @@ input::placeholder {
     font-size: 20px;
 }
 
-.highlights{
+.highlights {
     margin: 25px 0;
 }
 
-.highlights-desc{
+.highlights-desc {
     padding: 15px 35px;
 }
 
@@ -160,15 +160,15 @@ input::placeholder {
     margin: 25px;
 }
 
-/* wave 
+/* wave  */
 
 .section-wave {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
-    padding-top: 100px;
+    /*/ min-height: 400px;
+    padding-top: 100px;*/
     background: #3c31dd;
 }
 
@@ -179,8 +179,17 @@ input::placeholder {
     bottom: 0;
     text-align: center;
 }
-
+<
 .curve::before {
+    /*content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%); */
+
     content: '';
     display: block;
     position: absolute;
@@ -188,11 +197,11 @@ input::placeholder {
     width: 55%;
     height: 100%;
     transform: translate(85%, 60%);
-    background-color: hsl(216, 21%, 16%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .curve::after {
-    content: '';
+    /* content: '';
     display: block;
     position: absolute;
     border-radius: 100% 50%;
@@ -200,6 +209,15 @@ input::placeholder {
     height: 100%;
     background-color: #3c31dd;
     transform: translate(-4%, 40%);
+    z-index: -1; */
+
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(36, 67, 132) 0%, rgb(0, 7, 61) 100%, rgb(196, 201, 231) 100%, rgb(255, 255, 255) 100%);
+    transform: translate(-4%, 40%);
     z-index: -1;
 }
-*/
